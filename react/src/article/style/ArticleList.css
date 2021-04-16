@@ -4,10 +4,8 @@ table {
     width: 100%;
     color: black;
 }
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+.th_center { 
+ text-align: center;
 }
   tr:nth-child(even) {
     background-color: #dddddd;

@@ -1,15 +1,8 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    color: #000;
-}
-td,
-th {
+
+td,th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
-    width: 30%;
+
 }
 tr:nth-child(even) {
     background-color: #dddddd;
@@ -29,5 +22,5 @@ textarea {
     height: 500px;
 }
 input {
-    width: 1000px;
+    width: 100px;
 }

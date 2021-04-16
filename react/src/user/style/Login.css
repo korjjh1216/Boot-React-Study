@@ -33,7 +33,7 @@ form {
     margin: 24px 0 12px 0;
   }
   img.avatar {
-    width: 40%;
+    width: 20%;
     border-radius: 50%;
   }
   .container {
@@ -49,6 +49,6 @@ form {
       float: none;
     }
     .cancelbtn {
-      width: 100%;
+      width: 50%;
     }
   }

@@ -1,15 +1,16 @@
 import React from 'react'
-import '../../common/style/Common.css'
-import '../style/Board.css'
+import 'common/style/Common.css'
+import 'article/style/ArticleList.css'
+
 const AtricleList = () => {
     return (
         <>
-<h2>HTML Table</h2>
+<h2>NEWS</h2>
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th className="th_center">Company</th>
+    <th className="th_center">Contact</th>
+    <th className="th_center">Country</th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>

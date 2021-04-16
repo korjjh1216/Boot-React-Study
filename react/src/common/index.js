@@ -1,0 +1,6 @@
+export {default as Footer} from 'common/component/Footer'
+export {default as Home} from 'common/component/Home'
+export {default as Navi} from 'common/component/Navi'
+export {default as WhatAmI} from 'common/component/WhatAmI'
+export {default as WhereToFindMe} from 'common/component/WhereToFindMe'
+export {default as WhoAmI} from 'common/component/WhoAmI'
