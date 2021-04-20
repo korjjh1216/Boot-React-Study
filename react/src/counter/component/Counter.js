@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import counterService, { add, sub } from 'board/service/Counter.service'
+import { useSelector } from 'react-redux'
 
-const ReduxCounter = () => {
+const Counter = () => {
     const [count, setcount] = useState(0)
     useEffect(() => {
         setcount(0)
@@ -14,7 +14,7 @@ const ReduxCounter = () => {
                     <button
                         aria-label="+"
                         onClick={() => {
-                            setcount(add)
+                            setcount(count + 1)
                         }}
                     >
                         {' '}
@@ -22,9 +22,9 @@ const ReduxCounter = () => {
                     </button>
                     <span>{count}</span>
                     <button
-                        aria-aria-label="-"
+                        aria-label="-"
                         onClick={() => {
-                            setcount(sub)
+                            setcount(count - 1)
                         }}
                     >
                         -
@@ -34,4 +34,4 @@ const ReduxCounter = () => {
         </>
     )
 }
-export default ReduxCounter
+export default Counter

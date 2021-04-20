@@ -6,12 +6,7 @@ const Navi = () => {
             <nav className="navbar navbar-default">
                 <div className="container">
                     <div className="navbar-header">
-                        <button
-                            type="button"
-                            className="navbar-toggle"
-                            data-toggle="collapse"
-                            data-target="#myNavbar"
-                        >
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
@@ -44,7 +39,10 @@ const Navi = () => {
                                 <a href="/user/signup">SIGNUP</a>
                             </li>
                             <li>
-                                <a href="/board/counter">COUNTER</a>
+                                <a href="/counter/counter">COUNTER</a>
+                            </li>
+                            <li>
+                                <a href="/counter/redux-counter">REDUCER-COUNTER</a>
                             </li>
                         </ul>
                     </div>
