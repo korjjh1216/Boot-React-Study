@@ -1,10 +1,9 @@
 import React from 'react'
 
-const ReduxCounter = React.memo(({ number, onIncrease, onDecrease }) => {
-     
+const RtkCounter = React.memo(({ number, onIncrease, onDecrease }) => {
     return (
         <>
-            <h1>카운터</h1>
+            <h1>슬라이스 카운터</h1>
             <div>
                 <div>
                     <button aria-label="+" onClick={onIncrease}> + </button>
@@ -15,4 +14,4 @@ const ReduxCounter = React.memo(({ number, onIncrease, onDecrease }) => {
         </>
     )
 })
-export default ReduxCounter
+export default RtkCounter

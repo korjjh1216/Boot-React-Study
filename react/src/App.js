@@ -5,8 +5,7 @@ import { ArticleList, ArticleUpdate, ArticleDetail, ArticleWrite } from 'article
 import { Footer, Navi, Home } from 'common/index'
 import { LoginForm, SignUp, UserDetail } from 'user/index'
 import { News, SeoulCCTV } from 'board/index'
-import Counter from 'counter/component/Counter'
-import { CounterContainer } from 'counter/index'
+import { CounterContainer,Counter,RtkCounterContainer } from 'counter/index'
 function App() {
     return (
         <div className="App">
@@ -23,6 +22,7 @@ function App() {
             <Route exact path="/user/user-detail" component={UserDetail}></Route>
             <Route exact path="/counter/counter" component={Counter}></Route>
             <Route exact path="/counter/redux-counter" component={CounterContainer}></Route>
+            <Route exact path="/counter/rtk-counter" component={RtkCounterContainer}></Route>
             <Footer />
         </div>
     )

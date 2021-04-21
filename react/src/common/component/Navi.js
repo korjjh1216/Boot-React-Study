@@ -39,7 +39,7 @@ const Navi = () => {
                                 <a href="/user/signup">SIGNUP</a>
                             </li>
                             <li>
-                                <a href="/counter/counter">COUNTER</a>
+                                <a href="/counter/rtk-counter">COUNTER</a>
                             </li>
                             <li>
                                 <a href="/counter/redux-counter">REDUCER-COUNTER</a>

@@ -11,22 +11,11 @@ const Counter = () => {
             <h1>카운터</h1>
             <div>
                 <div>
-                    <button
-                        aria-label="+"
-                        onClick={() => {
-                            setcount(count + 1)
-                        }}
-                    >
-                        {' '}
-                        +{' '}
+                    <button aria-label="+" onClick={() => { setcount(count + 1)}}>
+                        +
                     </button>
                     <span>{count}</span>
-                    <button
-                        aria-label="-"
-                        onClick={() => {
-                            setcount(count - 1)
-                        }}
-                    >
+                    <button aria-label="-" onClick={() => {setcount(count - 1)}}>
                         -
                     </button>
                 </div>

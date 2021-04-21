@@ -7,10 +7,12 @@ import { BrowserRouter } from 'react-router-dom'
 //import store from 'app/store'
 import { Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
-import { counterReducer } from 'counter/index'
+import { counterReducer,counterSlice } from 'counter/index'
+import { configureStore } from '@reduxjs/toolkit'
 
-const rootReducer = combineReducers({ counterReducer })
-const store = createStore(rootReducer)
+const rootReducer = combineReducers({ counterReducer , counterSlice })
+//const store = createStore(rootReducer)
+const store =configureStore({reducer: rootReducer})
 
 ReactDOM.render(
     <Provider store={store}>
