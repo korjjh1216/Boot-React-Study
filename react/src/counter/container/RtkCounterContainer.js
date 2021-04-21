@@ -8,8 +8,8 @@ const RtkCounterContainer =() =>{
     const dispatch =useDispatch()
     return(<>
      <RtkCounter number={useSelector(state =>state.counterSlice.number)}
-     onIncrease={()=>dispatch(increase(1))} 
-     onDecrease={()=>dispatch(decrease(1))} />
+     onIncrease={()=>dispatch(increase())} 
+     onDecrease={()=>dispatch(decrease())} />
     </>)
 }
 export default RtkCounterContainer
