@@ -44,6 +44,9 @@ const Navi = () => {
                             <li>
                                 <a href="/counter/redux-counter">REDUCER-COUNTER</a>
                             </li>
+                            <li>
+                                <a href="/todos/todo-app">TO-DO</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

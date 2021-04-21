@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RtkCounter = React.memo(({ number, onIncrease, onDecrease }) => {
+const RtkCounter = ({ number, onIncrease, onDecrease }) => {
     return (
         <>
             <h1>슬라이스 카운터</h1>
@@ -13,5 +13,5 @@ const RtkCounter = React.memo(({ number, onIncrease, onDecrease }) => {
             </div>
         </>
     )
-})
+}
 export default RtkCounter
