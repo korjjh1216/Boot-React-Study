@@ -8,9 +8,10 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
 import { counterReducer,counterSlice } from 'counter/index'
+import todoReducer from 'todos/reducer/todo.reducer'
 import { configureStore } from '@reduxjs/toolkit'
 
-const rootReducer = combineReducers({ counterReducer , counterSlice })
+const rootReducer = combineReducers({ counterReducer , counterSlice,todoReducer })
 //const store = createStore(rootReducer)
 const store =configureStore({reducer: rootReducer})
 

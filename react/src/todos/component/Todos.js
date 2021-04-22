@@ -1,9 +1,11 @@
 import React from 'react'
-
-const Todos = () => {
+import 'todos/style/TodoStyle.css'
+import { Todo } from 'todos/index'
+const Todos = ({todos}) => {
     return(<>
-        <div>
-            <h1>할일</h1>
+        <div className="todo-container">
+        <label htmlFor="new-task">To-Do List</label>
+            {todos.map(todo => (<Todo key={todo.id} todo={todo}/>))}
         </div>
     </>)
 }
