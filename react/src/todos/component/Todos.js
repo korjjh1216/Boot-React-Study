@@ -1,11 +1,21 @@
 import React from 'react'
 import 'todos/style/TodoStyle.css'
 import { Todo } from 'todos/index'
-const Todos = ({todos}) => {
+import { useDispatch } from 'react-redux'
+const Todos = ({todos, delTodo,delTodos}) => {
+    
+    const dispatch =useDispatch()
+
+    const delclick = () => {
+        dispatch(delTodos())
+    }
+
     return(<>
         <div className="todo-container">
+        
         <label htmlFor="new-task">To-Do List</label>
-            {todos.map(todo => (<Todo key={todo.id} todo={todo}/>))}
+            {todos.map(todo => (<Todo key={todo.id} todo={todo} delTodo= {delTodo}/>))}
+            <button style={{width:100, backgroundColor:'red'}} onClick ={delclick}> 전체삭제</button>
         </div>
     </>)
 }
