@@ -1,0 +1,5 @@
+export {default as  QnABoardAdd} from 'qnaboard/component/QnABoardAdd'
+export {default as  QnABoardList} from 'qnaboard/component/QnABoardList'
+export {default as  QnABoardModify} from 'qnaboard/component/QnABoardModify'
+export {default as  QnABoardRead} from 'qnaboard/component/QnABoardModify'
+export {default as  List} from 'qnaboard/container/List'
