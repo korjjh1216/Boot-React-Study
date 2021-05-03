@@ -1,10 +1,10 @@
 //component
-export { default as Counter} from 'counter/component/Counter'
+export { default as Counter } from 'counter/component/Counter'
 export { default as RtkCounter } from 'counter/component/RtkCounter'
 
 //reducer
 export { default as counterReducer } from 'counter/reducer/counter.reducer'
-export { default as counterSlice} from 'counter/reducer/counter.slice'
+export { default as counterSlice } from 'counter/reducer/counter.slice'
 
 //container
 export { default as RtkCounterContainer } from 'counter/container/RtkCounterContainer'
