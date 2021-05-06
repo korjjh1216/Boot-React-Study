@@ -18,7 +18,7 @@ const Navi = () => {
                     <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#">WHO</a>
+                                <a href="/user/users">WHO</a>
                             </li>
                             <li>
                                 <a href="#">WHAT</a>

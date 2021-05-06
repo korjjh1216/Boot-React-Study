@@ -1,12 +1,13 @@
-import axios from "axios"
-import React, { useState, useEffect} from "react"
-import { Link } from "react-router-dom"
+import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import 'user/style/UserList.css'
 
 const UserList = () => {
     const [List, setList] = useState([])
     const fetchList = () => {
         axios
-            .get("http://localhost:8080/user/list")
+            .get('http://localhost:8080/user/list')
             .then((res) => {
                 console.log(res)
                 setList(res.data)
@@ -15,52 +16,39 @@ const UserList = () => {
     }
 
     useEffect(() => {
-        fetchList();
-    }, []);    
+        fetchList()
+    }, [])
 
-    
-    
+    return (
+        <form>
+            <div className="table_width" align="center">
+                <h1 align="center">회원 목록</h1>
 
-    return  (
-    <form>
-        <div className="container" align="center">
-            <h1 align="center">회원 목록</h1>
-            
-            <table border="1" align="center">
-                <thead>
-                    <tr>
-                        <th align="center" width="80">유저 고유 번호 </th>
-                        <th align="center" width="320">유저 id</th>
-                        <th align="center" width="100">비밀번호</th>
-                        <th align="center" width="180">이    름</th>
-                        <th align="center" width="180">이 메 일</th>
-                        <th align="center" width="180">생년월일</th>
-                        <th align="center" width="180">성    별</th>
-                        <th align="center" width="180">핸드폰번호</th>
-                        <th align="center" width="180">등록일자</th>
-
-                    </tr>
-                </thead>
-                {List.map((user)=> [
-                <tbody>
-                        <tr key={user.userNo}>
-                        <th align="center" width="80">{user.userNo}</th>
-                        <th align="center" width="320">{user.username}</th>
-                        <th align="center" width="100">{user.password}</th>
-                        <th align="center" width="180">{user.name}</th>
-                        <th align="center" width="180">{user.email}</th>
-                        <th align="center" width="180">{user.birthday}</th>
-                        <th align="center" width="180">{user.gender}</th>
-                        <th align="center" width="180">{user.phoneNumber}</th>
-                        <th align="center" width="180">{user.regDate}</th>
-                        </tr>  
-                </tbody>])}
-            </table>
-           
-        </div>
-        <Link to = {`/`}><button>홈으로</button></Link>
-    </form>
+                <table border="1" align="center">
+                    <thead>
+                        <tr>
+                            <th className="table_ttl">유저 고유 번호 </th>
+                            <th className="table_ttl">유저 id</th>
+                            <th className="table_ttl">비밀번호</th>
+                            <th className="table_ttl">이 름</th>
+                        </tr>
+                    </thead>
+                    {List.map((user) => [
+                        <tbody>
+                            <tr key={user.userNo}>
+                                <th className="table_ttl">{user.userNo}</th>
+                                <th className="table_ttl">{user.username}</th>
+                                <th className="table_ttl">{user.password}</th>
+                                <th className="table_ttl">{user.name}</th>
+                            </tr>
+                        </tbody>,
+                    ])}
+                </table>
+            </div>
+            <Link to={`/`}>
+                <button>홈으로</button>
+            </Link>
+        </form>
     )
-    
 }
 export default UserList

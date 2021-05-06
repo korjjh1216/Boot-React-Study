@@ -1,6 +1,11 @@
-import React from 'react';
-import 'user/style/SignUp.css';
+import React, { useState } from 'react'
+import 'user/style/SignUp.css'
 const SignUp = () => {
+    const { username, password, email } = useState({})
+
+    const handleChange = () => {}
+
+    const handleSubmit = () => {}
     return (
         <>
             <form action="/action_page.php" className="border_1px_solid_ccc">
@@ -9,17 +14,17 @@ const SignUp = () => {
                     <p>Please fill in this form to create an account.</p>
                     <hr />
                     <label for="email">
-                        <b>Email</b>
+                        <b>UserName</b>
                     </label>
-                    <input type="text" placeholder="Enter Email" name="email" required />
+                    <input type="text" onChange={handleChange} placeholder="Enter UserName" name="username" value={username} required />
                     <label for="psw">
                         <b>Password</b>
                     </label>
-                    <input type="password" placeholder="Enter Password" name="psw" required />
+                    <input type="password" onChange={handleChange} placeholder="Enter Password" name="psw" value={password} required />
                     <label for="psw-repeat">
-                        <b>Repeat Password</b>
+                        <b>Email</b>
                     </label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                    <input type="password" onChange={handleChange} placeholder="Email" name="email" value={email} required />
                     <label>
                         <input type="checkbox" checked="checked" name="remember" className="margin-bottom-15px" /> Remember me
                     </label>
@@ -41,6 +46,6 @@ const SignUp = () => {
                 </div>
             </form>
         </>
-    );
-};
-export default SignUp;
+    )
+}
+export default SignUp

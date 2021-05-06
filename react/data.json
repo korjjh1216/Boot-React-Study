@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "username": "aaab",
+      "email": "aaaa@test.com",
+      "password": "aaaabbbb1",
+      "name": "bbbbb",
+      "roles": [
+        "USER"
+      ]
+    },
+    {
+      "username": "abcd",
+      "email": "aabb@test.com",
+      "password": "aaaabbbb1",
+      "name": "hong",
+      "roles": [
+        "USER"
+      ]
+    },
+    {
+      "username": "aabbccdd",
+      "email": "aabbcc@test.com",
+      "password": "aaaabbbb1",
+      "name": "user3",
+      "roles": [
+        "USER"
+      ]
+    },
+    {
+      "username": "aabbee",
+      "email": "aabee@test.com",
+      "password": "aaaabbbb1",
+      "name": "user4",
+      "roles": [
+        "USER"
+      ]
+    },
+    {
+      "username": "aabbff",
+      "email": "aabff@test.com",
+      "password": "aaaabbbb1",
+      "name": "user5",
+      "roles": [
+        "USER"
+      ]
+    }
+  ]
+}
