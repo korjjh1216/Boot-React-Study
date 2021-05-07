@@ -1,12 +1,5 @@
 import axios from 'axios'
 
-const API_URL = `/data/users.json`
+export const getList = () => axios.get('http://localhost:8080/users/fetch')
 
-const userList = () => {
-    axios
-        .get(API_URL)
-        .then((res) => {
-            res.data
-        })
-        .catch((err) => {})
-}
+export const sigin = () => axios.post('http://localhost:8080/users/login',{})

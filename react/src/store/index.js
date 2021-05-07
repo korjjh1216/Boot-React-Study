@@ -7,6 +7,6 @@ import logger from 'redux-logger'
 const rootReducer = combineReducers({ counterReducer, counterSlice, todoReducer, userReducer })
 
 export default configureStore({
-    rootReducer,
+    reducer : rootReducer,
     middleware: [...getDefaultMiddleware(), logger],
 })

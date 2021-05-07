@@ -6,12 +6,7 @@ import javax.persistence.*;
 
 
 
-import lombok.Getter;
-import lombok.ToString;
-
 @Entity
-@ToString
-@Getter
 @Table(name = "boards")
 public class QnA {
 
